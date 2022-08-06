@@ -1,0 +1,85 @@
+.receitas {
+/*Display stuff*/
+    display: flex;
+    flex-wrap: wrap;
+/*Box model stuff*/
+    padding: 5rem 0 0 5rem;
+    background-color: #e5e5e5;
+}
+
+.receita {
+/*Display stuff*/
+    display: flex;
+    flex-direction: column;
+/*Box model stuff*/
+    width: calc(33% - 5rem);
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    background-color: #fdfdfd;
+}
+
+.receita__conteudo {
+/*Box model stuff*/
+    padding: 1rem;
+}
+
+.receita__imagem {
+/*Box model stuff*/
+    height: 150px;
+}
+
+.receita__titulo {
+/*Typography stuff*/
+    font-family: 'Roboto';
+    font-size: 1.4375rem;
+    font-weight: 400;
+}
+
+.receita__descricao {
+/*Typography stuff*/
+    font-size: 1.1875rem;
+    text-align: justify;
+/*Miscellaneous*/
+    line-height: 1.5;
+}
+
+.receita__botao {
+/*Box model stuff*/
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #8D0606;
+/*Typography stuff*/
+    color: #FFF;
+/*Manipulations stuff*/
+    transition: all 1s ease-in-out;
+}
+
+.receita__botao:hover {
+/*Box model stuff*/
+    background-color: #620404;
+/*Miscellaneous*/
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .receita {
+        margin-right: 1rem;
+        width: 100%;
+    }
+
+    .receitas {
+        padding: 5rem 0 0 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .receita {
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem);
+    }
+
+    .receitas {
+        padding: 5rem 0 0 2.5rem;
+    }
+}
